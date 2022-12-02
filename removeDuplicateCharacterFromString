@@ -1,0 +1,17 @@
+function removeDuplicates(str) {
+
+    let map = new Map();
+    let outputStr = ""
+
+    for (let i = 0; i < str.length; i++) {
+        if (!map.has(str[i])) {
+            map.set(str[i], true)
+            outputStr += str[i]
+        }
+    }
+
+    return outputStr
+}
+
+
+console.log("Output String ",removeDuplicates("nishantmmna"))
